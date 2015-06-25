@@ -1,0 +1,32 @@
+{
+  "name": "git-greenthumb",
+  "version": "0.1.0",
+  "description": "Development environmental friendly app to plant seeds in your programming garden.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indigo0086/git-greenthumb.git"
+  },
+  "keywords": [
+    "github",
+    "seed"
+  ],
+  "preferglobal": true,
+  "bin": {
+    "gth": "gth-cli.js"
+  },
+  "author": "Daniel Pritchett <indigo0086@gmail.com> (http://github.com/indigo0086)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indigo0086/git-greenthumb/issues"
+  },
+  "homepage": "https://github.com/indigo0086/git-greenthumb",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "mocha": "^2.2.5"
+  }
+}
