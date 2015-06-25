@@ -16,7 +16,7 @@
   ],
   "preferglobal": true,
   "bin": {
-    "gth": "gth-cli.js"
+    "gth": "lib/index.js"
   },
   "author": "Daniel Pritchett <indigo0086@gmail.com> (http://github.com/indigo0086)",
   "license": "MIT",
@@ -27,6 +27,10 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "gulp": "^3.9.0",
-    "mocha": "^2.2.5"
+    "sinon": "^1.15.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "minimist": "^1.1.1"
   }
 }
