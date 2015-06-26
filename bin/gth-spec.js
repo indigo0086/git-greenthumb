@@ -1,16 +1,12 @@
 var chai = require('chai');
-var process = require('child_process');
+var childProc = require('child_process');
 var should = chai.should();
 var sinon = require('sinon');
+var path = require('path');
 chai.use(require('sinon-chai'));
 
 
 describe('gth', function() {
-    var spawnSpy;
-
-    beforeEach(function() {
-        spawnSpy = sinon.spy(process.spawn);
-    });
 
     describe('options', function() {
 
@@ -26,12 +22,12 @@ describe('gth', function() {
 
 /**
  * Assertion helper that runs issue in
- * @param arguments
- * @param expectedOutput
- * @param done
+ * @param {string} arguments arguments to pass to gth command
+ * @param {string} expectedOutput value expected to return from command.
+ * @param done mocha done function.
  */
 function ensureCommandOutput(arguments, expectedOutput, done) {
-    var gth = process.spawn('./gth.js', arguments);
+    var gth = childProc.spawn('./gth.js', arguments, {cwd: __dirname});
 
     //When data returns, do assert
     gth.stdout.on('data', function(data) {

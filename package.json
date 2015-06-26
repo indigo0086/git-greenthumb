@@ -4,7 +4,7 @@
   "description": "Development environmental friendly app to plant seeds in your programming garden.",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha --recursive -R nyan **/*-spec.js"
   },
   "repository": {
     "type": "git",
