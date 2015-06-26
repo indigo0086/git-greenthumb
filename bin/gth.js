@@ -6,4 +6,3 @@ var program = require('commander');
 
 program.version(version)
     .parse(process.argv);
-
