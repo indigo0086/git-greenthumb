@@ -4,7 +4,7 @@
   "description": "Development environmental friendly app to plant seeds in your programming garden.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive -R nyan **/*-spec.js"
+    "test": "./node_modules/mocha/bin/mocha --recursive -R nyan **/*-spec.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "gulp": "^3.9.0",
+    "mocha": "^2.2.5",
     "sinon": "^1.15.3",
     "sinon-chai": "^2.8.0"
   },
