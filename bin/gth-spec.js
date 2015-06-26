@@ -20,10 +20,16 @@ describe('gth', function() {
                 var appVersion = require('../package.json').version;
                 ensureCommandOutput([this.command], appVersion, done);
             });
-        })
+        });
     });
 });
 
+/**
+ * Assertion helper that runs issue in
+ * @param arguments
+ * @param expectedOutput
+ * @param done
+ */
 function ensureCommandOutput(arguments, expectedOutput, done) {
     var gth = process.spawn('./gth.js', arguments);
 
